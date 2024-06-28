@@ -122,13 +122,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "*": {
+    #     "after_insert": "rabbitmq_connector.doc_events.producers.doc_producer",
+	# 	# "on_update": "method",
+	# 	# "on_cancel": "method",
+	# 	# "on_trash": "method"
+	# }
+}
+from rabbitmq_connector.utils import initial_producers
+initial_producers(doc_events)
 
 # Scheduled Tasks
 # ---------------

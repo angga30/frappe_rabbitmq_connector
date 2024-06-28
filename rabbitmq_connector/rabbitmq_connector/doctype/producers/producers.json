@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{doc_type} ({trigger})",
+ "creation": "2024-06-28 08:36:32.742083",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_type",
+  "column_break_krvz",
+  "trigger",
+  "section_break_vfoo",
+  "queue_name",
+  "exchange",
+  "routing_key",
+  "custom_function"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doc Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_krvz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trigger",
+   "fieldtype": "Select",
+   "label": "Trigger",
+   "options": "after_insert\non_update\non_submit\non_cancel\non_trash\non_update_after_submit\non_change"
+  },
+  {
+   "fieldname": "section_break_vfoo",
+   "fieldtype": "Section Break",
+   "label": "Producer Config"
+  },
+  {
+   "fieldname": "queue_name",
+   "fieldtype": "Small Text",
+   "label": "Queue Name",
+   "max_height": "30px"
+  },
+  {
+   "fieldname": "exchange",
+   "fieldtype": "Small Text",
+   "label": "Exchange",
+   "max_height": "30px"
+  },
+  {
+   "fieldname": "routing_key",
+   "fieldtype": "Small Text",
+   "label": "Routing Key",
+   "max_height": "30px"
+  },
+  {
+   "fieldname": "custom_function",
+   "fieldtype": "Small Text",
+   "label": "Custom Function",
+   "max_height": "30px"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 08:56:57.877988",
+ "modified_by": "Administrator",
+ "module": "Rabbitmq Connector",
+ "name": "Producers",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
